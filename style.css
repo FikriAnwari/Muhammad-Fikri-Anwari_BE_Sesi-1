@@ -1,0 +1,139 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body .back{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -100;
+}
+
+td{
+    font-size: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.back-cover{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -99;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header{
+    background-color: rgba(13, 14, 14, 0.4);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* text-align: center; */
+}
+
+.header h1{
+    -webkit-text-stroke: 2px #530d05;
+}
+
+.makanan, .minuman, .form-pemesanan{
+    background-color: rgba(39, 109, 117, 0.282);
+    text-align: center;
+    width: max-content;
+    padding: 20px 30px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding-bottom: 15px;
+    /* border: 20px solid rgba(39, 109, 117, 0.282); */
+    margin-bottom: 30px;
+    margin-top: 15px;
+    border-radius: 25px;
+    backdrop-filter: blur(8px);
+}   
+
+.makanan table, .minuman table{
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.footer{
+    margin-top: 230px;
+}
+
+.gambar{
+    width: 200px;
+    height: 100px;
+    /* border: 1px solid; */
+    overflow: hidden;
+}
+
+.gambar img{
+    width: 97%;
+    height: 148%;
+    object-fit: cover;
+}
+
+.gambar h1{
+    float: left;
+}
+
+table{
+    border-collapse: collapse;
+    width: 95%;
+}
+
+table tr:nth-child(1){
+    background-color: #043915;
+}
+
+table tr:hover:not(:first-child){
+    background-color: whitesmoke;
+}
+
+form{
+    display: inline-block;
+    text-align: left;
+    width: 500px;
+    padding: 5px;
+}
+
+form textarea{
+    width:98%;
+    height: 100px;
+    background-color: transparent;
+}
+
+form input{
+    background-color: transparent;
+}
+
+form input[type="text"]{
+    width: 98%;
+}
+
+form input[type="submit"]{
+    background-color: #690b0b;
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    border: 1px solid transparent;
+    border-radius: 25px;
+    /* box-shadow: 0px 4px whitesmoke; */
+}
+
+form input[type="submit"]:hover{
+    border: 2px solid whitesmoke; 
+}
